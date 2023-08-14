@@ -10,13 +10,10 @@ import (
 
 var blockGenerator = blocksutil.NewBlockGenerator()
 
-var peerSeq int
-
 // GeneratePeers creates n peer ids.
 func GeneratePeers(n int) []peer.ID {
 	peerIds := make([]peer.ID, 0, n)
 	for i := 0; i < n; i++ {
-		peerSeq++
 		p := peer.ID(fmt.Sprint(i))
 		peerIds = append(peerIds, p)
 	}
