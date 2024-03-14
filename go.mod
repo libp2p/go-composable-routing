@@ -1,6 +1,6 @@
 module github.com/libp2p/go-composable-routing
 
-go 1.20
+go 1.21
 
 require (
 	github.com/ipfs/go-cid v0.0.7
